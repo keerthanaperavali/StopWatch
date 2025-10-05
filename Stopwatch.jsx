@@ -8,7 +8,7 @@ function Stopwatch() {
     let interval;
     if (isRunning) {
       interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 10); // Increase time by 10 milliseconds
+        setTime((prevTime) => prevTime + 10);
       }, 10);
     } else {
       clearInterval(interval);
@@ -37,11 +37,17 @@ function Stopwatch() {
   };
 
   return (
-    <div>
+    <div className="stopwatch-container">
       <h1>Stopwatch</h1>
-      <div>{formatTime(time)}</div>
-      <button onClick={startStop}>{isRunning ? 'Stop' : 'Start'}</button><br></br><br></br>
-      <button onClick={reset}>Reset</button>
+      <div className="time-display">{formatTime(time)}</div>
+      <div className="btn-group">
+        <button onClick={startStop} className="btn start-stop">
+          {isRunning ? 'Stop' : 'Start'}
+        </button>
+        <button onClick={reset} className="btn reset">
+          Reset
+        </button>
+      </div>
     </div>
   );
 }
