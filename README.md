@@ -26,8 +26,8 @@ A simple and interactive **StopWatch** application built with **React** and **Vi
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/keerthanaperavali/StopWatch.git
-cd StopWatch
+git clone https://github.com/keerthanaperavali/StopWatch-React.git
+cd StopWatch-React
 ```
 
 2. **Install dependencies:**
